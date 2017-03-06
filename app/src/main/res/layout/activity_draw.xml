@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/draw"
+        android:layout_width="match_parent"
+        android:layout_height="10000dp"
+        android:background="@color/white"
+        fresco:actualImageScaleType="fitStart"
+        fresco:failureImage="@mipmap/ic_launcher"
+        fresco:placeholderImage="@mipmap/baisibudejie"
+        fresco:placeholderImageScaleType="fitStart" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <WebView
+            android:id="@+id/vb_draw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/bt_down"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="保存图片"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="@color/draw_normal"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+    <LinearLayout
+        android:id="@+id/bt_comment"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="@color/draw_normal"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/pinglun"/>
+        <TextView
+            android:id="@+id/tv_conmment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bt_share"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/bt_comment"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="@color/draw_normal"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/fenxiang"/>
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"/>
+    </LinearLayout>
+
+</RelativeLayout>

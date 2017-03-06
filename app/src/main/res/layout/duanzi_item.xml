@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#EEE"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sdv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:roundAsCircle="true" />
+
+            <ImageView
+                android:id="@+id/ivV"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/v"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:text="爆料网友id" />
+                <ImageView
+                    android:id="@+id/ivVIP"
+                    android:layout_width="15dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/zuanshi"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="2016-10-31 17:36" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="16dp"
+        android:text="段子内容。。。\n段子内容。。。\n段子内容。。。"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivZan"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/zan" />
+
+            <TextView
+                android:id="@+id/tvZan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivCai"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/xzan" />
+
+            <TextView
+                android:id="@+id/tvCai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivZhuangFa"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/zhuangfa" />
+
+            <TextView
+                android:id="@+id/tvZhuangFa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivPinLun"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/talk" />
+
+            <TextView
+                android:id="@+id/tvPingLun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRePing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#EEE"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="#900f"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#EEE"/>
+
+</LinearLayout>

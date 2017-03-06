@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile_sdv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:backgroundImage="@color/black"
+        app:placeholderImage="@mipmap/ic_launcher"
+        app:roundAsCircle="true"/>
+    <TextView
+        android:id="@+id/totalike_tv"
+        android:layout_below="@+id/profile_sdv"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/profile_sdv"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:background="@color/nomul"
+        android:padding="2dp"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:text="261" />
+    <ImageView
+        android:id="@+id/sex_iv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/profile_sdv"
+        android:background="@mipmap/nozan"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/sex_iv"
+        android:layout_alignBottom="@+id/sex_iv"
+        android:layout_marginLeft="5dp"
+        android:text="mingzi"/>
+
+    <CheckBox
+        android:id="@+id/pinlunzan_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/username"
+        android:button="@drawable/zan"/>
+
+    <TextView
+        android:id="@+id/like_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_toLeftOf="@+id/pinlunzan_iv"
+        android:layout_alignBottom="@+id/pinlunzan_iv"
+        android:layout_marginRight="10dp"
+        android:text="1"/>
+
+        <RelativeLayout
+            android:id="@+id/huifu_rll"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/sex_iv"
+            android:layout_alignTop="@+id/totalike_tv"
+            android:layout_alignRight="@+id/pinlunzan_iv"
+            android:background="@color/random">
+            <TextView
+                android:id="@+id/floor_tv"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/pinglun_bg"/>
+            <TextView
+                android:id="@+id/uname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/floor_tv"
+                android:layout_toRightOf="@+id/floor_tv"
+                android:layout_marginLeft="5dp"
+                android:textSize="13dp"
+                android:text="变化"/>
+
+            <CheckBox
+                android:id="@+id/u_pinlun_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignBottom="@+id/uname_tv"
+                android:button="@drawable/zan"/>
+
+            <TextView
+                android:id="@+id/u_like_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@+id/u_pinlun_iv"
+                android:layout_alignBottom="@+id/u_pinlun_iv"
+                android:layout_marginRight="10dp"
+                android:text="1"/>
+
+            <TextView
+                android:id="@+id/u_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uname_tv"
+                android:layout_alignLeft="@+id/uname_tv"
+                android:layout_marginTop="3dp"
+                android:text="你哈"/>
+
+            <TextView
+                android:id="@+id/utext_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_alignLeft="@+id/floor_tv"
+                android:layout_alignParentBottom="true"
+                android:text="内容"/>
+            
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/usertext_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sex_iv"
+            android:layout_alignTop="@+id/totalike_tv"
+            android:visibility="gone"
+            android:text="无"/>
+
+
+</RelativeLayout>

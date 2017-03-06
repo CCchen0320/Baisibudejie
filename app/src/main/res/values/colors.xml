@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#000</color>
+    <color name="wblack">#7e7c7c</color>
+    <color name="red">#f00</color>
+    <color name="nomul">#8a8a8a</color>
+    <color name="rb_main_normal">#939393</color>
+    <color name="rb_main_pressed">#FF2F56</color>
+    <color name="mainactivity_background">#ddd</color>
+    <color name="white">#fff</color>
+    <color name="gray_i">#fafafa</color>
+    <color name="top_color" >#ff2f56</color>
+    <color name="random" >#ff6d89</color>
+
+    <color name="draw_normal">#608a8a8a</color>
+    <color name="msgBackground">#8f000000</color>
+    <color name="hui">#EEE</color>
+    <color name="userNameColor">#3f83d6</color>
+    <color name="bg_stroke">#acaaaa</color>
+    <color name="pinglun_bg">#ecebeb</color>
+    <color name="nowhile">#d7d4d4</color>
+    <color name="videoSeekbarBackground">#b000</color>
+    <color name="send_comment_pressed" >#da2648</color>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/levelA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdvUserHead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:backgroundImage="@color/white"
+            app:placeholderImage="@mipmap/head_portrait"
+            android:background="@mipmap/head_portrait"
+            app:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tvUserSex"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/sex_men"/>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="简单。-晴天-"
+            android:textColor="@color/black"
+            android:textSize="@dimen/namesize" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvZan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:layout_marginTop="3dp"
+            android:textSize="15sp"
+            android:paddingRight="5dp"/>
+        <CheckBox
+            android:id="@+id/cbZan"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:button="@drawable/zan"
+            android:textSize="12sp"
+            android:paddingLeft="2dp"
+            android:drawableRight="@drawable/zan" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/levelB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvUserTotalCommentLike"
+            android:layout_width="35dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/user_comments_background"
+            android:textSize="7sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="1.80k"/>
+
+        <TextView
+            android:id="@+id/tvCommentText"
+            android:layout_marginLeft="12.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/tvCommentImage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            app:failureImage="@mipmap/load_error_normal"
+            app:placeholderImage="@mipmap/progress_bar_icon"
+            app:actualImageScaleType="fitCenter"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>
